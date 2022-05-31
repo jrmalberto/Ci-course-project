@@ -59,8 +59,8 @@ public class SauceDemoTests {
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		driver.findElement(By.className("btn_action")).click();
-		AssertJUnit.assertTrue(driver.findElement(By.className("product_label")).getText()
-				.equals("Products"));
+		AssertJUnit.assertTrue(driver.findElement(By.className("title")).getText()
+				.equals("PRODUCTS"));
 	}
 
 	//Before test
